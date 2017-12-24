@@ -17,14 +17,16 @@ public class Reverse_text {
 		 reci[i] = reci[i].replace( reci[i].charAt(0) , Character.toUpperCase(reci[i].charAt(0)));
 		 reci[i + 1] = reci[i + 1].replace(reci[i + 1].charAt(0), Character.toLowerCase(reci[i + 1].charAt(0)));
 				
-		 //Deleting punctuation sign behind word
+		 //Deleting punctuation sign behind the word
 		 reci[i] = reci[i].replace( reci[i].substring(reci[i].length() - 1) , "" );
 								
-		 //Deleting punctuation sign iza reci iza koje se nalazi koristeci StringBuilder
-		 //StringBuilder sb = new StringBuilder(reci[i]);
-		 //sb.deleteCharAt(sb.length() - 1);
-		 //reci[i] = sb.toString();
-				
+		 //Deleting punctuation sign behind the word using StringBuilder
+		 /*
+		   StringBuilder sb = new StringBuilder(reci[i]);
+		   sb.deleteCharAt(sb.length() - 1);
+		   reci[i] = sb.toString();
+		 */
+		      
 		 // Adding punctuation sign behind next word
 		 reci[i + 1] += c;
 		 i += 2;
