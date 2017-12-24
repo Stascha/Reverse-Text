@@ -42,7 +42,7 @@ public class Reverse_text {
 	      }
 	      else
 		 i++;
-		}
+	  }   
 		
 		
 		// Let's make a big letter at the beginning of the sentence to be a little letter
